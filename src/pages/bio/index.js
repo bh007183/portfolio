@@ -12,7 +12,7 @@ export default function Bio() {
           </p>
         </h4>
         <div className="ratio">
-          <img className="me" src={'/' + pic} />
+          <img className="me" src={pic} />
         </div>
 
         <p id="center-text">
