@@ -1,0 +1,39 @@
+#header-parent{
+    height: 45vh;
+   background: url("../../images/headerimg.jpg");
+   background-size: cover;
+   background-position: 0px -230px;
+   background-repeat: no-repeat;
+   position: relative;
+}
+#tolkein{
+   position: absolute;
+   bottom: 10%;
+   padding-left: 40px;
+   padding-right: 40px;
+   /* color: white; */
+   font-size: 18px;
+   font-weight: 500;
+   
+}
+
+@media only screen and (max-width: 920px) {
+    #header-parent{
+        
+       background-position: center;
+       
+       
+    }
+    #tolkein{
+      
+      top: 10%;
+     
+      
+   }
+  }
+@media only screen and (max-width: 420px) {
+    #sig{
+       color: white;
+    }
+  }
+  

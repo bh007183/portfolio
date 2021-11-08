@@ -1,0 +1,129 @@
+#project-contain {
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.925) 20%,
+      rgba(0, 0, 0, 0.1) 60%
+    ),
+    url("../../images/bodyimg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+.top-body {
+  grid-column: span 12 / span 12;
+  height: 500px;
+  position: relative;
+  /* background blend mode */
+  /* normal | multiply | screen | overlay | darken | lighten | color-dodge | color-burn | hard-light | soft-light | difference | exclusion | hue | saturation | color | luminosity */
+  
+  background: url("../../images/75891.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+.body-body {
+  grid-column: span 12 / span 12;
+ 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.hexagon {
+  /* auto|length|cover|contain|initial|inherit */
+  position: absolute;
+  background-position: center;
+  background-size: cover;
+  background-color: rgb(46, 40, 40);
+
+  clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
+}
+.hex-child {
+  height: 250px;
+  width: 250px;
+}
+#hex-child1{
+    background: 
+    url("../../images/hex1.jpg");
+    background-position: -100px 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#hex-child2{
+    background: 
+    url("../../images/hex5.jpg");
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.hexagon1 {
+  top: 20px;
+}
+.hexagon2 {
+  top: 230px;
+  left: 130px;
+}
+.hex-card{
+    position: absolute;
+    width: 50%;
+    height: 250px;
+   
+    top: 20px;
+    left: 40%
+
+}
+#pro-link{
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    width: 150px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+  
+    padding: 5px;
+}
+
+
+.Card{
+  width: 40%;
+  min-height: 470px;
+  margin-top: 40px;
+  /* background-color: rgba(240, 248, 255, 0.2) !important;
+  font-family: 'Cormorant Garamond', serif !important; */
+}
+@media only screen and (max-width: 920px) {
+  .hexagon {
+    height: 200px;
+    width: 200px;
+  }
+  .hexagon1 {
+    top: 20px;
+  }
+  .hexagon2 {
+    top: 195px;
+    left: 105px;
+  }
+}
+@media only screen and (max-width: 712px) {
+    .hexagon {
+        /* auto|length|cover|contain|initial|inherit */
+        display: none;
+       
+      }
+      .hex-card{
+        position: static;
+        width: 100%;
+        
+    
+    }
+    .Card{
+      width: 100%;
+      padding: 20px;
+    }
+    .top-body{
+      height: 300px;
+    }
+}

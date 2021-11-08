@@ -1,0 +1,53 @@
+#about-contain {
+    background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.925) 1%,
+        rgba(0, 0, 0, 0.1) 60%
+      ),
+      url("../../images/pattern.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    font-size: 18px;
+    min-height: 80vh;
+    
+  }
+  /*  “To the sea, to the sea! The white gulls are crying,
+The wind is blowing, and the white foam is flying.
+West, west away, the round sun is falling,
+Grey ship, grey ship, do you hear them calling, */
+/* It is said by the Eldar that in water there lives yet the echo of the Music of the Ainur more than in any substance that is in this Earth; and many of the Children of Ilúvatar hearken still unsated to the voices of the Sea, and yet know not for what they listen. */
+/* the grey rain-curtain turned all to silver glass and was rolled back, and he beheld white shores and beyond them a far green country under a swift sunrise. */
+  .me{
+    float: left;
+    margin-right: 2vw;
+    border-radius: 5vw;
+    width: 30%;
+  
+    
+    
+ }
+ #center-text{
+   margin: 0%;
+ }
+ 
+
+ @media only screen and (max-width: 376px){
+     .me{
+         float: none;
+         width: auto;
+         height: 30vh;
+        
+         
+     }
+     .ratio{
+         display: flex;
+         justify-content: center;
+     }
+     .bio{
+         text-align: center;
+     }
+     #center-text p{
+         text-align: center;
+     }
+ }
