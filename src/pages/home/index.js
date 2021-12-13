@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import JacobsPhoto from "../../images/Jacobs-Port.jpg";
 import Emissary from "../../images/emissary.jpg";
 import Movie from "../../images/movie.jpg"
+import BookMania from "../../images/bookmania.png"
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
@@ -64,6 +65,40 @@ export default function Home() {
         </div>
       </section>
       <section className="body-body">
+      <Card className="Card">
+          <CardMedia
+            component="img"
+            height="240"
+            image={BookMania}
+            alt="Image of book mania homepage"
+          />
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="div"  style={{fontFamily: 'Cormorant Garamond' }}>
+              Book Mania
+            </Typography>
+            <Typography  style={{fontFamily: 'Cormorant Garamond', fontSize: "17px" }}>
+              A MERN application where users can create accounts, search for books, and show others what they are reading. They can also recommend books for their connections to read! Future development would include adding more categories to browse by and style adjustments.
+            </Typography>
+          </CardContent>
+          <CardActions style={{ justifyContent: "space-between" }}>
+            <Button
+              href="https://bjh-book-mania-123.herokuapp.com/"
+              target="_blank"
+              size="small"
+              style={{fontFamily: 'Cormorant Garamond', fontSize: "17px" }}
+            >
+              Visit Site
+            </Button>
+            <Button
+              href="https://github.com/bh007183/book-mania"
+              target="_blank"
+              size="small"
+              style={{fontFamily: 'Cormorant Garamond', fontSize: "17px" }}
+            >
+              GitHub Repo
+            </Button>
+          </CardActions>
+        </Card>
         <Card className="Card">
           <CardMedia
             component="img"
